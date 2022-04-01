@@ -11,9 +11,9 @@ namespace HomeFork.Controllers
     public class SortsController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<string> DownloadResult(int id)
+        public ActionResult<List<SortingResult>> DownloadResult()
         {
-            return "value";
+            return FileManager.Load();
         }
 
         [HttpPost]
@@ -28,20 +28,22 @@ namespace HomeFork.Controllers
             {
                 Sorted = sortedByBubbles,
                 Algorithm = "Bubbles!",
-                Time = watch.ElapsedMilliseconds
+                Time = watch.Elapsed.TotalMilliseconds
             });
 
             watch.Restart();
-            var sortedViaMerge = SortingManager.DoDatMergeSort(numbers, 0, numbers.Length - 1);
+            var sortedViaMerge = SortingManager.DoDatMergeSort(numbers);
             watch.Stop();
             result.Add(new SortingResult()
             {
                 Sorted = sortedViaMerge,
                 Algorithm = "Merge sort",
-                Time = watch.ElapsedMilliseconds
+                Time = watch.Elapsed.TotalMilliseconds
             });
 
-            return Ok(sortedByBubbles);
+            FileManager.Save(result);
+
+            return Ok(result);
         }
     }
 }

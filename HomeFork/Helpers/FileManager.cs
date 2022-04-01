@@ -11,7 +11,8 @@ namespace HomeFork.Helpers
 
         public static void Save(List<SortingResult> content)
         {
-            File.WriteAllText(path: filePath, contents: JsonSerializer.Serialize(content));
+            Directory.CreateDirectory("Results");
+            File.WriteAllText(filePath, JsonSerializer.Serialize(content));
         }
 
         public static List<SortingResult> Load()

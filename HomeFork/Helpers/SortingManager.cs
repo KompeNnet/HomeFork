@@ -27,7 +27,7 @@ namespace HomeFork.Helpers
             return result;
         }
 
-        public static int[] DoDatMergeSort(int[] nums, int s, int f)
+        public static int[] DoDatMergeSort(int[] nums)
         {
             if (nums == null || nums.Length == 0)
             {
@@ -36,15 +36,20 @@ namespace HomeFork.Helpers
 
             var result = (int[])nums.Clone();
 
+            MergeSort(result, 0, result.Length - 1);
+
+            return result;
+        }
+
+        private static void MergeSort(int[] nums, int s, int f)
+        {
             if (s < f)
             {
                 int mid = (s + f) / 2;
-                DoDatMergeSort(result, s, mid);
-                DoDatMergeSort(result, mid + 1, f);
-                Merge(result, s, mid, f);
+                MergeSort(nums, s, mid);
+                MergeSort(nums, mid + 1, f);
+                Merge(nums, s, mid, f);
             }
-
-            return result;
         }
 
         private static void Merge(int[] nums, int s, int mid, int f)
