@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1831
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeFork", "HomeFork\HomeFork.csproj", "{A0A4479C-B0E6-49B4-8BAC-9434690C280C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeFork", "HomeFork\HomeFork.csproj", "{B579EBC1-F49D-412C-A6F8-14F452E1164A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A0A4479C-B0E6-49B4-8BAC-9434690C280C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A0A4479C-B0E6-49B4-8BAC-9434690C280C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A0A4479C-B0E6-49B4-8BAC-9434690C280C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A0A4479C-B0E6-49B4-8BAC-9434690C280C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B579EBC1-F49D-412C-A6F8-14F452E1164A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B579EBC1-F49D-412C-A6F8-14F452E1164A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B579EBC1-F49D-412C-A6F8-14F452E1164A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B579EBC1-F49D-412C-A6F8-14F452E1164A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {02A9AB9D-7FBD-4302-80EF-19883EFD38CD}
+		SolutionGuid = {5322E606-1DA4-4AB9-994C-D55291C595B7}
 	EndGlobalSection
 EndGlobal
